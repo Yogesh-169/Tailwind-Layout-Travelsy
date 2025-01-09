@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-white">
+        <!-- Top Bar -->
+        <div class="bg-black text-white grid grid-cols-2 gap-2">
+            <!-- Left Section -->
+            <div class="bg-blue-500 flex justify-center items-center gap-12 font-semibold py-2 ">
+                <p class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>123-456-7890</span>
+                </p>
+                <p class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>example@gmail.com</span>
+                </p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="bg-black flex justify-center items-center gap-8 divide-x divide-gray-600 py-2">
+                <!-- Login/Register -->
+                <p class="flex items-center gap-2 px-4 text-white">
+                    <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white text-blue-500 border border-blue-500">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span>Login / Register</span>
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex items-center gap-4 px-4">
+                    <!-- Social Icon -->
+                    <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white text-blue-500 border border-blue-500">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                    <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white text-blue-500 border border-blue-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white text-blue-500 border border-blue-500">
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                    <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white text-blue-500 border border-blue-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between px-4 md:px-8 py-2 border-b border-gray-200 bg-white">
+            <!-- Logo -->
+            <div class="ms-44 ">
+                <p class="text-blue-500 font-bold text-3xl">Travel<span class="text-black">sy</span></p>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex items-center gap-6 text-black pt-5">
+                    <li>
+                        <a href="#" class="group inline-flex flex-col items-center text-black hover:text-gray-500">
+                            Home
+                            <span
+                                class="mt-1 h-2 w-2 bg-blue-500 scale-0 group-hover:scale-100 group-active:scale-100 group-focus:scale-100 transition-transform rounded-full"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group inline-flex flex-col items-center text-black hover:text-gray-500">
+                            About Us
+                            <span
+                                class="mt-1 h-2 w-2 bg-blue-500 scale-0 group-hover:scale-100 group-active:scale-100 group-focus:scale-100 transition-transform rounded-full"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group inline-flex flex-col items-center text-black hover:text-gray-500">
+                            Host A Venue
+                            <span
+                                class="mt-1 h-2 w-2 bg-blue-500 scale-0 group-hover:scale-100 group-active:scale-100 group-focus:scale-100 transition-transform rounded-full"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group inline-flex flex-col items-center text-black hover:text-gray-500">
+                            Hotels
+                            <span
+                                class="mt-1 h-2 w-2 bg-blue-500 scale-0 group-hover:scale-100 group-active:scale-100 group-focus:scale-100 transition-transform rounded-full"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group inline-flex flex-col items-center text-black hover:text-gray-500">
+                            Blog
+                            <span
+                                class="mt-1 h-2 w-2 bg-blue-500 scale-0 group-hover:scale-100 group-active:scale-100 group-focus:scale-100 transition-transform rounded-full"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Search Icon and Box -->
+            <div class="flex items-center relative transition-all">
+                <span
+                    class="flex items-center justify-center w-12 h-12 rounded-full bg-white text-blue-500 border border-blue-500 text-xl hover:cursor-pointer transition-all"
+                    id="searchIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+
+                <!-- Search Box inside the same button container -->
+                <input type="text" id="searchBox" placeholder="Search..."
+                    class="w-0 opacity-0 h-8 px-4 rounded-full bg-gray-100 border border-blue-500 absolute left-0 transition-all focus:w-64 focus:opacity-100 focus:px-6 focus:ring-2 focus:ring-blue-500" />
+            </div>
+
+            <!-- Contact Button -->
+            <div class="me-36">
+                <button class="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition-colors">
+                    Contact Us <i class="fa-solid fa-phone-volume"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div
+        class="grid grid-cols-2 container relative mx-auto text-center mt-10  bg-[url(../images/backgroundHero.png)] bg-cover bg-center bg-no-repeat">
+        <div class="flex flex-col md:flex-row items-center justify-center py-24 gap-8">
+            <!-- First part with text -->
+            <div class="flex flex-col justify-center text-center md:text-left max-w-md py-6">
+                <p class="text-xl text-gray-600">Relax & Enjoy the Vacation</p>
+                <h1 class="text-4xl font-bold text-black mt-4">Choose <span class="text-[#4691F2]"> Travelsy </span> To
+                    Book Your Hotel</h1>
+                <p class=" text-sm py-6 text-gray-800 mt-2">Lorem ipsum dolor sit amet consectetur. Hac consequat hac
+                    arcu
+                    sed. Lectus ante ut
+                    in mattis ornare commodo nisi. Tortor tincidunt fames quam fusce convallis eget pulvinar.</p>
+                <button
+                    class="bg-blue-500 text-white  text-center rounded-[30px] hover:bg-blue-600 py-2 w-[170px] h-[45px] gap-2 transition-colors">Make
+                    Reservation <i class="fa-solid fa-calendar  "></i></button>
+            </div>
+        </div>
+
+        <div class="relative flex justify-center items-center w-full max-w-md">
+            <!-- First Image: Bottom of 3rd image -->
+            <img src="../images/1st.png" alt="Image 1"
+                class="absolute left-0 transform -translate-x-1/4 w-[195px] h-[235px] object-cover top-[50px] rounded-[10px] shadow-lg">
+
+            <!-- Second Image: Side part in between 1st and 3rd (shifted right) -->
+            <img src="../images/2nd.png" alt="Image 2"
+                class="absolute left-[60%] top-[130px] transform -translate-x-1/2 w-[195px] h-[270px] object-cover rounded-[10px] shadow-lg">
+
+            <!-- Third Image: Positioned on top with 1st and 2nd overlapping -->
+            <img src="../images/3rd.png" alt="Image 3"
+                class="absolute left-0 transform -translate-x-1/4 w-[195px] h-[180px] object-cover top-[300px] rounded-[10px] shadow-lg">
+            <img src="../images/Group 8742.png" alt="Image 3"
+                class="absolute left-[30%] transform -translate-x-1/4 w-[120px] h-[120px] object-cover top-[250px] rounded-full shadow-lg">
+        </div>
+    </div>
+
+
+    <div class="container mx-auto my-auto mt-10 w-[1000px] p-4 shadow-xl rounded-full bg-white">
+        <div class="flex justify-center items-center gap-8">
+            <input type="text" placeholder="Enter Your Destination"
+                class="w-[300px] h-[50px] rounded-full px-4 border border-[#4691F24D] placeholder:text-black font-bold">
+            <input type="date"
+                class="w-[300px] h-[50px] rounded-full px-4 border border-[#4691F24D] placeholder:text-black font-bold">
+            <input type="text" placeholder="Enter Your Destination"
+                class="w-[300px] h-[50px] rounded-full px-4 border border-[#4691F24D] placeholder:text-black font-bold">
+            <button
+                class="bg-blue-500 text-white text-center rounded-[30px] hover:bg-blue-600 py-2 w-[170px] h-[45px] gap-2 transition-colors">
+                Search <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="relative grid grid-cols-2 container mx-auto mt-10">
+        <!-- Left Image -->
+
+        <div class="flex flex-wrap justify-center items-center gap-4">
+            <img src="../images/left.png" alt="Left Image" class="absolute top-0 left-0">
+            <img src="../images/4th.png" alt="Fourth Image"
+                class="absolute w-[350px] h-[514px] top-[200px] object-contain">
+            <img src="../images/5th.png" alt="Fifth Image"
+                class="absolute w-[160px] h-[207px] top-[250px] left-[490px] object-contain">
+            <img src="../images/6th.png" alt="Sixth Image"
+                class="absolute w-[180px] h-[255px] top-[450px] left-[450px] object-contain">
+        </div>
+
+
+        <!-- Right Image and Content -->
+        <div class="pr-36 pt-24"> <!-- Added padding to shift content to the left -->
+            <div class="">
+                <img src="../images/right.png" alt="Right Image"
+                    class="absolute right-0 w-auto h-auto top-8 mt-8 object-contain">
+            </div>
+            <div class="flex flex-col md:flex-row  py-24 gap-8">
+                <!-- First part with text -->
+                <div class="flex flex-col md:text-left max-w-md py-6 top-8 mt-8">
+                    <p class="text-xl text-gray-600">Get About Us</p>
+                    <h1 class="text-4xl font-bold text-black mt-4">More About <span class="text-[#4691F2]"> Travelsy
+                        </span></h1>
+                    <p class="text-sm pt-6 text-gray-500 mt-2">
+                        Amet cursus sit amet dictum. At erat pellentesque adipiscing commodo. Sit amet volutpat
+                        consequat mauris nunc congue nisi vitae suscipit.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2 mb-2">
+                        Rutrum quisque non tellus orci ac. Varius vel pharetra vel turpis nunc eget lorem dolor sed.
+                        Interdum posuere lorem ipsum dolor sit.
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <img src="../images/send.png" alt="Icon" class="w-4 h-4">
+                        Donec adipiscing tristique risus nec feugiat in
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <img src="../images/send.png" alt="Icon" class="w-4 h-4">
+                        Donec adipiscing tristique risus nec feugiat in
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <img src="../images/send.png" alt="Icon" class="w-4 h-4">
+                        Donec adipiscing tristique risus nec feugiat in
+                    </p>
+
+                    <button
+                        class="bg-blue-500 text-white text-center rounded-[30px] hover:bg-blue-600 py-2 my-2 w-[170px] h-[45px] gap-2 transition-colors">
+                        Search <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col justify-center text-center mt-8 py-3">
+        <p>
+            Top Destinations
+        </p>
+        <h1 class="text-4xl font-bold text-black mt-4">Popular Hotels For Booking</h1>
+    </div>
+
+    <div class="flex mt-6 gap-4 justify-center items-center w-full h-screen">
+
+        <div class="w-full rounded-lg border shadow-xl overflow-hidden bg-white border-stone-200 max-w-xs">
+            <img src="../images/Blog Image1.png" alt="image" class="w-[calc(100%-16px)] h-max rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Some Amazing
+                    Title Here</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, alina
+                    adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+            </div>
+            <div class="grid grid-cols-[40%_60%] px-3.5 py-2">
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-location-dot"></i> Museum</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-user"></i> 12 Person Capacity</p>
+                </div>
+            </div>
+            <div class="flex pl-[10px] py-2">
+                <h1 class="font-bold text-2xl ">
+                    $150/
+                </h1>
+                <p class=" pt-2">Per Night</p>
+                <div class="pl-[120px] pb-2">
+                    <button
+                        class=" flex items-center justify-center w-[45px] h-[45px] rounded-full bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full rounded-lg border shadow-xl overflow-hidden bg-white border-stone-200 max-w-xs">
+            <img src="../images/Blog Image2.png" alt="image" class="w-[calc(100%-16px)] h-max rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Some Amazing
+                    Title Here</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, alina
+                    adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+            </div>
+            <div class="grid grid-cols-[40%_60%] px-3.5 py-2">
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-location-dot"></i> Museum</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-user"></i> 12 Person Capacity</p>
+                </div>
+            </div>
+            <div class="flex pl-[10px] py-2">
+                <h1 class="font-bold text-2xl ">
+                    $150/
+                </h1>
+                <p class=" pt-2">Per Night</p>
+                <div class="pl-[120px] pb-2">
+                    <button
+                        class=" flex items-center justify-center w-[45px] h-[45px] rounded-full bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full rounded-lg border shadow-xl overflow-hidden bg-white border-stone-200 max-w-xs">
+            <img src="../images/Blog Image3.png" alt="image" class="w-[calc(100%-16px)] h-max rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Some Amazing
+                    Title Here</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, alina
+                    adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+            </div>
+            <div class="grid grid-cols-[40%_60%] px-3.5 py-2">
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-location-dot"></i> Museum</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p><i class="fa-solid fa-user"></i> 12 Person Capacity</p>
+                </div>
+            </div>
+            <div class="flex pl-[10px] py-2">
+                <h1 class="font-bold text-2xl ">
+                    $150/
+                </h1>
+                <p class=" pt-2">Per Night</p>
+                <div class="pl-[120px] pb-2">
+                    <button
+                        class=" flex items-center justify-center w-[45px] h-[45px] rounded-full bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div
+        class="justify-center text-center py-[80px] bg-[url(../images/rightbg.png)] bg-no-repeat bg-[position:right_top]">
+        <div class="inline-flex rounded-full shadow-lg shadow-black overflow-hidden bg-white">
+            <!-- Left Button -->
+            <button class="flex items-center justify-center px-4 py-2 text-blue-500 hover:bg-gray-700">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <!-- Right Button -->
+            <button class="flex items-center justify-center px-4 py-2 text-blue-500 hover:bg-gray-700">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div
+            class="flex mt-8 py-[180px] gap-4 justify-center bg-[url(../images/backgroundHero.png)] bg-cover bg-no-repeat ">
+            <div class="rounded-lg border shadow-xl bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+                <div class="flex justify-center">
+                    <img src="../images/Building.png" class="justify-center px-12 pt-5 items-center">
+                </div>
+                <div class="w-full h-max rounded px-3 py-2">
+                    <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">1000+</h6>
+                </div>
+                <p class="font-sans antialiased text-base mb-2 text-stone-600">hotel</p>
+            </div>
+
+            <div class="rounded-lg border shadow-xl bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+                <div class="flex justify-center">
+                    <img src="../images/Bed.png" class="justify-center px-12 pt-5 items-center">
+                </div>
+                <div class="w-full h-max rounded px-3 py-2">
+                    <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">4500+</h6>
+                </div>
+                <p class="font-sans antialiased text-base mb-2 text-stone-600">Rooms Available</p>
+            </div>
+
+            <div class="rounded-lg border shadow-xl bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+                <div class="flex justify-center">
+                    <img src="../images/Beach.png" class="justify-center px-12 pt-5 items-center">
+                </div>
+                <div class="w-full h-max rounded px-3 py-2">
+                    <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">30+</h6>
+                </div>
+                <p class="font-sans antialiased text-base mb-2 text-stone-600">Beach View</p>
+            </div>
+
+            <div class="rounded-lg border shadow-xl bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+                <div class="flex justify-center">
+                    <img src="../images/Guest.png" class="justify-center px-12 pt-5 items-center">
+                </div>
+                <div class="w-full h-max rounded px-3 py-2">
+                    <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">8000+</h6>
+                </div>
+                <p class="font-sans antialiased text-base mb-2 text-stone-600">Guests</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="flex flex-col justify-center text-center mt-8 py-3">
+            <p>
+                Best Places For Your Party
+            </p>
+            <h1 class="text-4xl font-bold text-black mt-4">Place That Accommodates Your Guest</h1>
+
+
+        </div>
+        <div class="absolute py-3 flex right-0 ">
+            <div class="relative">
+                <img src="../images/wedding.png" alt="" class=" object-cover h-[350px] w-[350px]">
+                <h1 class="absolute bottom-0 left-0 text-white text-xl  px-2 py-1">Wedding</h1>
+            </div>
+            <div class="relative">
+                <img src="../images/Birthday.png" alt="" class=" object-cover h-[350px] w-[350px]">
+                <p class="absolute bottom-0 left-0 text-white text-xl  px-2 py-1">Birthday</p>
+            </div>
+            <div class="relative">
+                <img src="../images/Corporate.png" alt="" class=" object-cover h-[350px] w-[350px]">
+                <p class="absolute bottom-0 left-0 text-white text-xl px-2 py-1">Corporate</p>
+            </div>
+            <div class="relative">
+                <img src="../images/Baby.png" alt="" class=" object-cover h-[350px]">
+                <p class="absolute bottom-0 left-0 text-white text-xl px-2 py-1">Baby</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-[400px] ">
+            <div class="inline-flex rounded-full shadow-lg shadow-black overflow-hidden bg-white">
+                <!-- Left Button -->
+                <button class="flex items-center justify-center px-4 py-2 text-blue-500 hover:bg-gray-700">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <!-- Right Button -->
+                <button class="flex items-center justify-center px-4 py-2 text-blue-500 hover:bg-gray-700">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center text-center mt-8 py-3">
+        <div class="px-auto">
+            <div class="flex flex-col justify-center text-center mt-8 py-3">
+                <p class="text-gray-500">
+                    Testimonials
+                </p>
+                <h1 class="text-4xl font-bold text-black mt-4">What Our Traveler Say’s</h1>
+                </h1>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="flex justify-center items-center gap-8">
+                    <img src="../images/t1.png" alt="" class="pt-[190px]">
+                    <img src="../images/t2.png" alt="" class="pt-[190px]">
+                    <img src="../images/t3.png" alt="">
+                </div>
+                <div class="flex flex-col md:text-left max-w-md py-6 top-8 mt-8">
+                    <h1 class="text-lg font-bold text-black mt-4">Tommy Murphy</h1>
+
+                    <p class="text-gray-500">
+                        Global Directives Architect
+                    </p>
+                    <p class="text-gray-500 pt-5 flex-wrap">
+                        Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget
+                        egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean
+                        euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo
+                        duis ut. Arcu cursus vitae congue mauris.
+                    </p>
+                    <div class="pt-[140px]">
+                        <button
+                            class=" flex items-center justify-center w-[45px] h-[45px] rounded-full bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 ">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="relative">
+        <img src="../images/Rectangle.png" alt="" class="w-full h-auto">
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white space-y-4 bg-black/50">
+            <h1 class="text-3xl font-bold">Are You Ready To Travel? Remember Us !!</h1>
+            <p class="text-lg px-4 max-w-2xl">
+                Amet nisl purus in mollis nunc. Blandit libero volutpat sed cras ornare. In pellentesque massa placerat
+                duis ultricies lacus sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Id
+                consectetur purus ut faucibus pulvinar elementum integer enim.
+            </p>
+            <button
+                class="bg-white text-blue-500 py-2 px-6 rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 gap-2">
+                Book Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center text-center mt-8 py-3">
+        <p>
+            Top Destinations
+        </p>
+        <h1 class="text-4xl font-bold text-black mt-4">Popular Hotels For Booking</h1>
+    </div>
+
+    <div class="flex mt-6 gap-4 justify-center items-center w-full h-screen">
+
+
+        <div
+            class="w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+            <img src="https://s3-alpha-sig.figma.com/img/ce42/82f8/c87eaa7f2aa74db91e27ad75f1f12314?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jn6oDqZXwtNqC4vpkPZeicJhGd8AT0dgqiJTWtbOB798NVwgDNubAWB2BaDLJis5elOmYFgcMHAVpnT1~k3ax35BMPoEPumvCggpDxA6UvNIUpYh6IwCvzR3CHKqHj-JhAzxR~MHmEPqZpb8Ub6DKxg~QBPUAQSr10-U3L5EbGkJdQU05HdNjRMHjgFIKSFGogUA4z293wp3-8HBo7ux~2DXnBTffwwWXN7ZOZBaTrkcdDX2BkKcuWKC4z49yA5airPwQCvk44CKRA5E474GlCqrja-VlICMrCDV98awdrTGKuCcwdEjlL9nD5xp78vYP-AlAOH1an96i5bGeR0aXQ__" alt="image" class="w-[calc(100%-16px)] h-max rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Journeys Are Best Measured In New Friends</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis pul leo.</p>
+            </div>
+            <div class="w-full px-3.5 pt-2 pb-3.5 rounded">
+                <button
+                    class="bg-inherit font-bold text-blue-500">Read
+                    More</button>
+            </div>
+        </div>
+
+
+
+        <div
+            class="w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+            <img src="https://s3-alpha-sig.figma.com/img/9768/e1cd/55b0d0c95b6c3b79335843a3a051295d?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S7AAqViyvVpMpOoA96Vj5~kicINlXtXMHrRW0Ggv-fxJNc541vb7COEJCVuefa~ObGh1Z8KCkql~KqQxlarmAx7ECnLAqv3XuaTtw~COer1DI6I8LZzl9hU1ACgz9ZYPLI2fg9f8fmJ3aSy28Ab2v5jMX8raYlmVL9JgSWrcbLi-oiMtprbrzo1dk-1WL2vvhkbgPja5UjGxn-c7oP4dXE4KC181pyXjxKUOzxGgF57N0ZxxF4wLBbQyTQ7bEp7Yz~8fzesAglpi43LZy4VEsXG1Oyh-FA6G4l-SETJxy5ud7221ZK-~kF46B9EOOVSwv~bixoUiye4A3evwSROrsQ__" alt="image" class="w-[calc(100%-16px)] h-max rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Journeys Are Best Measured In New Friends</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis pul leo.</p>
+            </div>
+            <div class="w-full px-3.5 pt-2 pb-3.5 rounded">
+                <button
+                    class="bg-inherit font-bold text-blue-500">Read
+                    More</button>
+            </div>
+        </div>
+
+
+
+        <div
+            class="w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-xs">
+            <img src="https://s3-alpha-sig.figma.com/img/e3ff/e57e/88bed092199cbc2a795d53c06ae9f9f3?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=piKjfkCkIwQu2p251uIoBrj~~i4-V7PLfZSkBlhAgqCPk9Fln5Gp~xYXeGMml-GC8V3QMkKOlJiy~D7kMnyaxZH1BN0YO5UDrFxiB0wNynGwv4dDs6ZPh0AJCGyiTUT4ksgLE7HRsVxyRxO8P2Lm-ko62oNlGebF2R9aOfA-EC4AwwHyXTexCkLPl9Qv1BHrGNAvOmBNAXw31MsqrpWyGRRyfxpeZzguQBdAX2ExfyBSeWcFXnObGk2wRFTT-6LwLFx0vFI1-DPH7wBdd~MWoBBqYRl~yc~RyUKAlbr-qApaySRTLXJh-Yrkoto6O8uHILYELvI-OzFmHP9naBHcFg__" alt="image" class="w-[calc(100%-16px)] h-[201.3px] rounded m-2" />
+            <div class="w-full h-max rounded px-3.5 py-2.5">
+                <h6 class="font-sans antialiased font-bold text-base md:text-lg lg:text-xl text-current">Journeys Are Best Measured In New Friends</h6>
+                <p class="font-sans antialiased text-base my-1 text-stone-600">Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis pul leo.</p>
+            </div>
+            <div class="w-full px-3.5 pt-2 pb-3.5 rounded">
+                <button
+                    class="bg-inherit font-bold text-blue-500">Read
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+  
+
+            <div class="flex flex-col justify-center text-center mt-8 py-3 rounded-xl bg-blue-500 ">
+                
+                <div class="flex justify-center items-center gap-8">
+                    <h1 class="text-4xl font-bold text-black mt-4">Subscribe for Latest Newsletter</h1>
+                
+                    <input type="text" placeholder="Enter Your Email"
+                    class="w-[300px] h-[50px] rounded-full px-4 border border-[#4691F24D] placeholder:text-black font-bold">
+                    <button
+                    class="bg-blue-500 text-white text-center rounded-[30px] hover:bg-blue-600 py-2 w-[170px] h-[45px] gap-2 transition-colors">
+                    Subscribe <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        const searchIcon = document.getElementById('searchIcon');
+        const searchBox = document.getElementById('searchBox');
+        searchIcon.addEventListener('click', () => {
+            // Toggling the width and opacity of the search box when clicked
+            searchBox.classList.toggle('w-64'); // Toggle width on click
+            searchBox.classList.toggle('opacity-100'); // Toggle visibility     
+        });
+    </script>
+</body>
+
+</html>
